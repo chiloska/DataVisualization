@@ -1,0 +1,27 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button (click)="snav.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <a routerLink="/">
+    <img src="assets/imgs/logo_white_xsmall.png">
+  </a>
+</mat-toolbar>
+
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #snav mode="side" [fixedInViewport]="false" [fixedTopGap]="0" [fixedBottomGap]="0">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/">
+        <i class="material-icons mdl-shadow--2dp ic-home">home</i> Home </a>
+    </mat-nav-list>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/reports/download">
+        <i class="material-icons mdl-shadow--2dp ic-home">description</i> Reports </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

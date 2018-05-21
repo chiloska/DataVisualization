@@ -1,0 +1,90 @@
+<div class="mdl-grid container">
+
+  <div class="mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone content-para">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          <h5>ERP Negatives</h5>
+        </mat-card-title>
+        <mat-card-subtitle>
+          <h4>{{negativeAdj | currency:'USD':'true'}}</h4>
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <canvas id="NegativeTrend"></canvas>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div class="mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone content-para">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          <h5>ERP Positives</h5>
+        </mat-card-title>
+        <mat-card-subtitle>
+          <h4>{{positiveAdj | currency:'USD':'true'}}</h4>
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <canvas id="PositiveTrend"></canvas>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div class="mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone content-para">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          <h5>Net Amount</h5>
+        </mat-card-title>
+        <mat-card-subtitle>
+          <h4>{{totalAmount | currency:'USD':'true'}}</h4>
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <canvas id="NetTrend"></canvas>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div class="mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone content-para">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          <h4>Top Offender By Customer</h4>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <canvas id="customers"></canvas>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+
+  <div class="mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone content-para">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          <h4>Top Offender By Reason Code</h4>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <canvas id="reasons"></canvas>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div class="mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone content-para">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          <h4>Top Offender By Status</h4>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <canvas id="status"></canvas>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

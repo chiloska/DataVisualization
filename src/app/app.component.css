@@ -1,0 +1,18 @@
+.example-container {
+    position: absolute;
+    top: 72px;
+    bottom: 0px;
+    left: 8px;
+    right: 8px;
+}
+
+.ic-home {
+    padding: 10px;
+    background-color: #009ADD;
+    border-radius: 50%;
+    color: white;
+    margin-right: 10px;
+}
+img{
+    vertical-align: middle;
+}
