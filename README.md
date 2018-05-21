@@ -2,8 +2,8 @@
 
 Project to display KPIs using Angular/Angular-Material/Chartjs
 
-![Cat](https://raw.githubusercontent.com/chiloska/DataVisualization/gitassets/Dashboard.jpg)
+![Dashboard](gitassets/Dashboard.JPG)
 
 Report Section
 
-![Cat](https://raw.githubusercontent.com/{user}/DataVisualization/gitassets/Reports.jpg)
+![Reports](gitassets/Reports.jpg)
